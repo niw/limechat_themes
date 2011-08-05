@@ -1,0 +1,179 @@
+html {
+  font-family: 'Helvetica Neue';
+  font-size: 9pt;
+  background-color: #fff;
+  color: #111;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* the html tag has these classes and attributes too */
+body.normal {}
+body.console {}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+
+hr { margin: 0.5em 2em; }
+a {
+  color: #007ec4;
+}
+.inlineimage {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin: 2px;
+}
+
+/* lines */
+.line {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dotted #eee;
+  line-height: 1.2em;
+  display: -webkit-box;
+}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[type=action] {}
+.line[highlight=true] {
+  background-color: #eee;
+}
+
+.url {
+  word-break: break-all;
+}
+.address {
+  text-decoration: none;
+  font-style: italic;
+  word-break: break-all;
+}
+.highlight {
+  color: #f00; font-weight: bold;
+}
+
+.time {
+  border-right: 1px solid #ddd;
+  color: #ccc;
+  width: 3em;
+  padding: 4px;
+  padding-left: 8px;
+  display: block;
+}
+.place {
+  background: #eee;
+  border-right: 1px solid #ddd;
+  color: #666;
+  width: 7em;
+  padding: 4px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sender {
+  background: #eee;
+  border-right: 1px solid #ddd;
+  width: 7em;
+  padding: 4px;
+  text-align: right;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.message {
+  display: block;
+  padding: 4px;
+  padding-right: 8px;
+  -webkit-box-flex: 1;
+}
+.sender[type=myself] + .message {
+  background-color: #f4f4f4;
+}
+
+/* nickname for text messages */
+.sender[type=myself] { color: #333; }
+.sender[type=normal] { color: #666; }
+.sender[type=normal][colornumber='0'] {}
+.sender[type=normal][colornumber='1'] {}
+.sender[type=normal][colornumber='2'] {}
+.sender[type=normal][colornumber='3'] {}
+.sender[type=normal][colornumber='4'] {}
+.sender[type=normal][colornumber='5'] {}
+.sender[type=normal][colornumber='6'] {}
+.sender[type=normal][colornumber='7'] {}
+.sender[type=normal][colornumber='8'] {}
+.sender[type=normal][colornumber='9'] {}
+.sender[type=normal][colornumber='10'] {}
+.sender[type=normal][colornumber='11'] {}
+.sender[type=normal][colornumber='12'] {}
+.sender[type=normal][colornumber='13'] {}
+.sender[type=normal][colornumber='14'] {}
+.sender[type=normal][colornumber='15'] {}
+
+/* message body */
+.message[type=system] { color: #ccc; }
+.message[type=error] { color: #c00; font-weight: bold; }
+.message[type=reply] { color: #666; }
+.message[type=error_reply] { color: #c00; }
+.message[type=dcc_send_send] { color: #666; }
+.message[type=dcc_send_receive] { color: #999; }
+.message[type=privmsg] {}
+.message[type=notice] { color: #888; }
+.message[type=action] { color: #ccc; }
+.message[type=join] { color: #ccc; }
+.message[type=part] { color: #ccc; }
+.message[type=kick] { color: #ccc; }
+.message[type=quit] { color: #ccc; }
+.message[type=kill] { color: #ccc; }
+.message[type=nick] { color: #ccc; }
+.message[type=mode] { color: #ccc; }
+.message[type=topic] { color: #ccc; }
+.message[type=invite] { color: #ccc; }
+.message[type=wallops] { color: #ccc; }
+.message[type=debug_send] { color: #aaa; }
+.message[type=debug_receive] { color: #444; }
+
+/* mIRC color effects */
+.effect[color-number='0'] {}
+.effect[color-number='1'] {}
+.effect[color-number='2'] {}
+.effect[color-number='3'] {}
+.effect[color-number='4'] {}
+.effect[color-number='5'] {}
+.effect[color-number='6'] {}
+.effect[color-number='7'] {}
+.effect[color-number='8'] {}
+.effect[color-number='9'] {}
+.effect[color-number='10'] {}
+.effect[color-number='11'] {}
+.effect[color-number='12'] {}
+.effect[color-number='13'] {}
+.effect[color-number='14'] {}
+.effect[color-number='15'] {}
+.effect[bgcolor-number='0'] {}
+.effect[bgcolor-number='1'] {}
+.effect[bgcolor-number='2'] {}
+.effect[bgcolor-number='3'] {}
+.effect[bgcolor-number='4'] {}
+.effect[bgcolor-number='5'] {}
+.effect[bgcolor-number='6'] {}
+.effect[bgcolor-number='7'] {}
+.effect[bgcolor-number='8'] {}
+.effect[bgcolor-number='9'] {}
+.effect[bgcolor-number='10'] {}
+.effect[bgcolor-number='11'] {}
+.effect[bgcolor-number='12'] {}
+.effect[bgcolor-number='13'] {}
+.effect[bgcolor-number='14'] {}
+.effect[bgcolor-number='15'] {}
+
+/* vim:set sw=2 ts=2 expandtab: */
